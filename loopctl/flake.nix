@@ -5,13 +5,13 @@
 
   outputs = { self, nixpkgs }:
     let
-      version = "0.0.0";
+      version = "0.4.0";
 
       assets = {
-        "x86_64-linux"   = { arch = "linux_amd64";   hash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="; };
-        "aarch64-linux"  = { arch = "linux_arm64";   hash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="; };
-        "x86_64-darwin"  = { arch = "darwin_amd64";  hash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="; };
-        "aarch64-darwin" = { arch = "darwin_arm64";  hash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="; };
+        "x86_64-linux"   = { arch = "linux_amd64";   hash = "sha256-8uCpeXOV4dk5/isxa4+0MLHXj3gvwx+bGkfPiq0Mpfo="; };
+        "aarch64-linux"  = { arch = "linux_arm64";   hash = "sha256-g0B+O1TbDeST6kgeY838uVzwUM84bdqbxio5qtq0Gm8="; };
+        "x86_64-darwin"  = { arch = "darwin_amd64";  hash = "sha256-91uQdx4sJnYjbuM7pDYuyQMsXnEQJQxncOkICuPEVlc="; };
+        "aarch64-darwin" = { arch = "darwin_arm64";  hash = "sha256-NF+xcfY5Mbhz3DZkPqy5KvSu7REaC+3lK/TJ0mjY8So="; };
       };
 
       mkPackage = system:
