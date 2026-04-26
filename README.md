@@ -8,6 +8,7 @@ sibling repos under `pattern-zones-co/`):
 - `forme` 
 - `unslop` 
 - `hat` 
+- `loopctl` 
 
 ## Release tag convention
 
