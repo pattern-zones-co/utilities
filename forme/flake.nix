@@ -5,13 +5,13 @@
 
   outputs = { self, nixpkgs }:
     let
-      version = "0.2.0";
+      version = "0.2.1";
 
       assets = {
-        "x86_64-linux"   = { arch = "linux_amd64";   hash = "sha256-wB4AZK7uK0LHkE0N90U9E6YWrls7O1SvfUspWubrs38="; };
-        "aarch64-linux"  = { arch = "linux_arm64";   hash = "sha256-cJWkg/frqHab4r6lHfRazIlPZwRtyICS0sA9RK4goPo="; };
-        "x86_64-darwin"  = { arch = "darwin_amd64";  hash = "sha256-vqztaj48kzFEQ7i8/hjvnlJ7YVtoCmYxNYNKo7XD+t4="; };
-        "aarch64-darwin" = { arch = "darwin_arm64";  hash = "sha256-frAE4mgIiuNVPz1ooGcWVpGCf9HFyR5wIzSZfNwIHqA="; };
+        "x86_64-linux"   = { arch = "linux_amd64";   hash = "sha256-c51OufXUmlox1ou3t4Mu9gZT3SaC8eH3SExqxHuI4hw="; };
+        "aarch64-linux"  = { arch = "linux_arm64";   hash = "sha256-3kGED0Vw41u83A66zrWbi91miXtRea7XWsKT8kPTVFs="; };
+        "x86_64-darwin"  = { arch = "darwin_amd64";  hash = "sha256-WXIj4dgo7l85+zd9jb3CNjeRAETcUy89NeJeE5vVYdE="; };
+        "aarch64-darwin" = { arch = "darwin_arm64";  hash = "sha256-0CaOLwH4xtw1PGr3sdzd3+r18heEvbHvvvolvnK6abQ="; };
       };
 
       mkPackage = system:
