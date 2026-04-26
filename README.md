@@ -1,13 +1,13 @@
 # utilities
 
-Public release mirror for Pattern Zones internal utilities.
+Release mirror for Pattern Zones internal utilities.
 
 This repo holds compiled binaries for the following tools (sources in private
 sibling repos under `pattern-zones-co/`):
 
-- `forme` — formatter / forms helper
-- `unslop` — content de-slopification
-- `hat` — human-as-tool
+- `forme` 
+- `unslop` 
+- `hat` 
 
 ## Release tag convention
 
@@ -16,6 +16,5 @@ sibling repos under `pattern-zones-co/`):
 
 ## Why this exists
 
-The source repos are private but the compiled binaries are intended to be
-freely shareable with collaborators and reproducibly fetchable by
+The source repos are private but the compiled binaries are intended to be reproducibly fetchable by
 [NixOS](https://github.com/pattern-zones-co/infra) configurations.
