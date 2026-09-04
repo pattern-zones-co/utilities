@@ -5,14 +5,14 @@
 
   outputs = { self, nixpkgs }:
     let
-      version = "1.1.0";
+      version = "1.2.1";
 
       # coedit is deployed only to linux/amd64 workstations, and upstream
       # goreleaser now builds that target alone. Listing a system here without a
       # published tarball would fail at fetch time with a 404 rather than a
       # clear "unsupported system", so the list tracks what actually ships.
       assets = {
-        "x86_64-linux" = { arch = "linux_amd64"; hash = "sha256-cFuUU4bbubR2E7ZplWGEKFvAumlhXhb9G+39pz/W/Mg="; };
+        "x86_64-linux" = { arch = "linux_amd64"; hash = "sha256-LAPFPK2FBlOgd1PCVwwkFNQtu+CfUspPipQocHObrT4="; };
       };
 
       # coedit shells out to a bare `typst` resolved from PATH, so it is
