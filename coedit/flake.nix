@@ -7,11 +7,12 @@
     let
       version = "1.1.0";
 
+      # coedit is deployed only to linux/amd64 workstations, and upstream
+      # goreleaser now builds that target alone. Listing a system here without a
+      # published tarball would fail at fetch time with a 404 rather than a
+      # clear "unsupported system", so the list tracks what actually ships.
       assets = {
-        "x86_64-linux"   = { arch = "linux_amd64";   hash = "sha256-cFuUU4bbubR2E7ZplWGEKFvAumlhXhb9G+39pz/W/Mg="; };
-        "aarch64-linux"  = { arch = "linux_arm64";   hash = "sha256-IV0brkFo17A/Dp2NLNhoZsIot/jrQFrqs7JTJNPPlTA="; };
-        "x86_64-darwin"  = { arch = "darwin_amd64";  hash = "sha256-unLmjhTkAdhAEaSjLryb5+vwbDqJXf9FDi2aHE9/f/I="; };
-        "aarch64-darwin" = { arch = "darwin_arm64";  hash = "sha256-CuRdXtiJZHw579Ikp9UTuoKuLWoW3heXnOMs+BA3+/4="; };
+        "x86_64-linux" = { arch = "linux_amd64"; hash = "sha256-cFuUU4bbubR2E7ZplWGEKFvAumlhXhb9G+39pz/W/Mg="; };
       };
 
       # coedit shells out to a bare `typst` resolved from PATH, so it is
